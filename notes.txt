@@ -4,7 +4,7 @@ _________________________
   sets the text size relative to the default browser text size (16px)
 
   If you’re interested in sizing elements in comparison to other elements nearby, then the em unit would be better suited for the job.
-  
+
 
 rem 
 _________________________
@@ -17,6 +17,21 @@ _________________________
   By default the font size is 16px but you can change it by adding a css rule.
 
   If you are interested in sizing elements consistently across an entire website, the rem measurement is the best unit for the job
+
+Percentages: Height & Width
+___________________________
+
+  use Percentages to change the size of no text html elements
+
+  when using Percentages the element is sized relative to the size of their parent
+
+  be sure to set the size of the parent element first
+
+  setting an element’s width to 100% may cause content to overflow its parent container. While tempting, 100% should only be used when content will not have padding, border, or margin.
+
+Percentages: Padding & Margin
+______________________________
+
 
 
 
