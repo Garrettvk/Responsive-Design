@@ -1,0 +1,49 @@
+em 
+_________________________
+
+  sets the text size relative to the default browser text size (16px)
+
+  If you’re interested in sizing elements in comparison to other elements nearby, then the em unit would be better suited for the job.
+  
+
+rem 
+_________________________
+
+  Rem stands for root em. 
+  It acts similar to em, but instead of checking parent elements to size font, it checks the root element.
+
+  By default the html tag is the root element.
+
+  By default the font size is 16px but you can change it by adding a css rule.
+
+  If you are interested in sizing elements consistently across an entire website, the rem measurement is the best unit for the job
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+How delete git branches
+_________________________
+
+  // delete branch locally
+  git branch -d localBranchName
+
+  // delete branch remotely
+  git push origin --delete remoteBranchName
