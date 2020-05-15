@@ -119,3 +119,11 @@ footer {
   color: #999999;
   text-align: center;
 }
+
+/* 
+stop paragraphs from getting smaller than 200px to keep them legible. 
+containers can move freely but p tags have a minimum limit
+*/
+p {
+  min-width: 200px;
+}
