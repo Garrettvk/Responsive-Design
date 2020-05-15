@@ -12,7 +12,7 @@ _________________________
   Rem stands for root em. 
   It acts similar to em, but instead of checking parent elements to size font, it checks the root element.
 
-  By default the html tag is the root element.
+  html tag is the root element.
 
   By default the font size is 16px but you can change it by adding a css rule.
 
@@ -21,7 +21,7 @@ _________________________
 Percentages: Height & Width
 ___________________________
 
-  use Percentages to change the size of no text html elements
+  use Percentages to change the size of non-text html elements
 
   when using Percentages the element is sized relative to the size of their parent
 
@@ -32,8 +32,27 @@ ___________________________
 Percentages: Padding & Margin
 ______________________________
 
+  Percentages can be used to set the padding and margin of elements 
 
+  When setting height and width with percentages the dimensions of the child element is based on the dimensions of the patent element.
 
+  When using percentages to set padding and margin its calculated based only on the width of the parent element.
+  Vertical padding and margin are also calculated based on the width of the parent. 
+    A container div is defined, but its height is not set (meaning it’s flat).
+    The container then has a child element added within. The child element does have a set height. This causes the height of its parent container to stretch to that height.
+    The child element requires a change, and its height is modified. This causes the parent container’s height to also stretch to the new height. This cycle occurs endlessly whenever the child element’s height is changed!
+    In the scenario above, an unset height (the parent’s) results in a constantly changing height due to changes to the child element. This is why vertical padding and margin are based on the width of the parent, and not the height.
+
+    Note: When using relative sizing, ems and rems should be used to size text and dimensions on the page related to text size (i.e. padding around text). This creates a consistent layout based on text size. Otherwise, percentages should be used.
+
+Width: Minimum & Maximum
+______________________________
+  Although relative measurements provide consistent layouts across devices of different screen sizes, elements on a website can lose their integrity when they become too small or large. You can limit how wide an element becomes with the following properties:
+
+    min-width — ensures a minimum width for an element.
+    max-width — ensures a maximum width for an element.
+
+  The unit of pixels is used to ensure hard limits on the dimensions of the element(s).
 
 
 
