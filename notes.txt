@@ -1,13 +1,12 @@
 em 
-_________________________
+______________________________
 
   sets the text size relative to the default browser text size (16px)
 
   If you’re interested in sizing elements in comparison to other elements nearby, then the em unit would be better suited for the job.
 
-
 rem 
-_________________________
+______________________________
 
   Rem stands for root em. 
   It acts similar to em, but instead of checking parent elements to size font, it checks the root element.
@@ -19,7 +18,7 @@ _________________________
   If you are interested in sizing elements consistently across an entire website, the rem measurement is the best unit for the job
 
 Percentages: Height & Width
-___________________________
+______________________________
 
   use Percentages to change the size of non-text html elements
 
@@ -54,8 +53,11 @@ ______________________________
 
   The unit of pixels is used to ensure hard limits on the dimensions of the element(s).
 
+Height: Minimum & Maximum
+______________________________
+  You can set limits for height as well.
 
-
+  Example: when you stretch out a webpage the texts can become really short. Add and limit to the height can fix this problem. Instead of stretching completely flat it the height stops getting shorter now matter how far you stretch the browser.
 
 
 

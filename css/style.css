@@ -25,7 +25,7 @@ body {
   background-image: url("camel-background.png");
   background-position: center;
   /* adds height to banner relative to default font size */
-  height: 46rem; 
+  height: 46rem;
   background-repeat: no-repeat;
   display: flex;
   justify-content: center;
@@ -120,10 +120,12 @@ footer {
   text-align: center;
 }
 
-/* 
-stop paragraphs from getting smaller than 200px to keep them legible. 
-containers can move freely but p tags have a minimum limit
-*/
 p {
+  border: var(--border-width) solid aqua;
+  /* 
+  stop paragraphs from getting smaller than 200px to keep them legible. 
+  containers can move freely but p tags have a minimum limit
+  */
   min-width: 200px;
+  min-height: 200px; /* stops text from spreading to thin */
 }
