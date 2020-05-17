@@ -22,3 +22,15 @@ This is a very common design pattern used to scale images and videos proportiona
   /* display images as block level elements (rather than inline-block, their default state). This will prevent images from attempting to align with other content on the page (like text), which can add unintended margin to the images. */
   display: block;
 }
+
+/* 
+Scaling Background Images
+______________________________
+*/
+
+body {
+  background-image: url('#');   /* url for background image '#' is a placeholder */
+  background-repeat: no-repeat; /* don't repeat background, this is on by default */
+  background-position: center;  /* center image */
+  background-size: cover;       /* image covers entire background of element */
+}

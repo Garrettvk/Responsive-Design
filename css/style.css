@@ -20,12 +20,9 @@ body {
 
 .image-container img {
   border: var(--border-width) solid blueviolet;
-  /* this makes the entire image show the whole time */
-  max-width: 100%;
-  /* make height proportional */
-  height: auto;
-  /* this displays as one block on content, nothing can be to the left or right */
-  display: block;
+  max-width: 100%; /* this makes the entire image show the whole time */
+  height: auto;    /* make height proportional */
+  display: block;  /* this displays as one block on content, nothing can be to the left or right */
 }
 
 /* Banner Section */
@@ -33,9 +30,9 @@ body {
 #banner {
   background-image: url("camel-background.png");
   background-position: center;
-  /* adds height to banner relative to default font size */
-  height: 46rem;
   background-repeat: no-repeat;
+  background-size: cover;
+  height: 46rem; /* adds height to banner relative to default font size */
   display: flex;
   justify-content: center;
   align-items: center;
