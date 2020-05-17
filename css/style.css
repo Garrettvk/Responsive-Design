@@ -14,9 +14,18 @@ body {
 }
 
 .image-container {
+  /* hides anything that goes past container */
+  overflow: hidden;
 }
 
 .image-container img {
+  border: var(--border-width) solid blueviolet;
+  /* this makes the entire image show the whole time */
+  max-width: 100%;
+  /* make height proportional */
+  height: auto;
+  /* this displays as one block on content, nothing can be to the left or right */
+  display: block;
 }
 
 /* Banner Section */

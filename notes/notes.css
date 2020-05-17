@@ -1,0 +1,24 @@
+/* 
+Scaling Images and Videos
+______________________________
+
+This is a very common design pattern used to scale images and videos proportionally.
+*/
+
+.container {
+  width: 50%;
+  height: 200px;
+  /* any content that passes over container is hidden */
+  overflow: hidden;
+}
+
+.container img {
+  /* images scale with the width of the container. */
+  max-width: 100%;
+
+  /* height scales proportionally with the width. */
+  height: auto;
+
+  /* display images as block level elements (rather than inline-block, their default state). This will prevent images from attempting to align with other content on the page (like text), which can add unintended margin to the images. */
+  display: block;
+}
