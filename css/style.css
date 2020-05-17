@@ -1,137 +1,124 @@
-:root {
-  --border-width: 10px;
+html,
+body {
+  max-width: 1200px;
+  margin: auto;
+  font-family: "Space Mono", sans-serif;
+  font-size: 18px;
+  line-height: 1.4em;
+  color: GhostWhite;
 }
-
-/* Universal Styles */
-html {
-  font-size: 16px;
-}
-
-/* Universal Styles */
 
 body {
-  background-color: white;
-}
-
-.image-container {
-  /* hides anything that goes past container */
-  overflow: hidden;
-}
-
-.image-container img {
-  border: var(--border-width) solid blueviolet;
-  max-width: 100%; /* this makes the entire image show the whole time */
-  height: auto;    /* make height proportional */
-  display: block;  /* this displays as one block on content, nothing can be to the left or right */
-}
-
-/* Banner Section */
-
-#banner {
-  background-image: url("camel-background.png");
-  background-position: center;
-  background-repeat: no-repeat;
+  background-image: url("../img/space.jpg");
+  height: 100%;
+  background-attachment: fixed;
   background-size: cover;
-  height: 46rem; /* adds height to banner relative to default font size */
-  display: flex;
-  justify-content: center;
-  align-items: center;
+}
+
+.clearfix {
+  clear: both;
+}
+
+/* Title and Description */
+
+.page-title {
+  border: 2px solid red;
   text-align: center;
-}
-
-#banner h1 {
-  border: var(--border-width) solid red;
-  font-size: 3.75rem;
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  color: white;
-}
-
-/* Blog Post */
-
-/* container for blog */
-#blog {
-  border: var(--border-width) solid pink;
   margin: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 86%;
+  line-height: 2em;
 }
 
-/* text content for blog */
-#blog .post {
-  border: var(--border-width) solid blue;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-family: "Merriweather", serif;
-  font-weight: 300;
-  font-size: 1rem;
+.logo {
+  height: 80px;
+  width: 80px;
+  background-image: url("../img/spaceship.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: inline-block;
+  position: relative;
+  top: 1em;
+}
+
+.page-title h1 {
+  display: inline-block;
+}
+
+.main {
   text-align: center;
-  line-height: 1.8;
-  color: #444444;
-  width: 52%;
-  /* add space to top and bottom */
-  margin-top: 12.5%;
-  margin-bottom: 7.5%;
 }
 
-.post h2 {
-  border: var(--border-width) solid orange;
-  font-size: 1.875rem;
+.page-description {
+  font-size: 0.8rem;
+  padding: 30px;
 }
 
-.post h3 {
-  border: var(--border-width) solid yellow;
-  font-size: 1.125rem;
-  color: #999999;
-}
-
-.post .opening-line {
-  margin-top: 4.1875rem;
-  margin-bottom: 1.5rem;
-  color: black;
+.learn-more {
+  color: DarkOrange;
+  text-decoration: none;
+  display: block;
+  margin: 25px 0 0 0;
   font-weight: bold;
 }
 
-/* container behind guy with food??? */
-.post .image-container {
-  border: var(--border-width) solid brown;
-  width: 100%;
+/* Gallery */
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
 }
 
-/* Blog Images */
-
-.images {
-  border: var(--border-width) solid purple;
-  margin-bottom: 20%;
+.gallery-item {
+  margin: 20px;
 }
 
-/* these are the containers for google map and camel photo */
-.images .image-container {
-  display: inline-block;
-  width: 50%;
+.gallery-item .thumbnail {
+  width: 240px;
+  border: 2px solid GhostWhite;
+  border-radius: 4px;
 }
 
-/* Footer */
+/* Footer Navigation */
 
-footer {
-  border: var(--border-width) solid green;
-  padding: 4rem 0;
-  border-top: 1px solid #999999;
-  font-family: "Roboto", sans-serif;
-  font-size: 1.125rem;
-  color: #999999;
+nav {
+  margin-top: 30px;
+}
+
+nav ul {
+  display: block;
+}
+
+nav li {
+  display: inline;
+  margin: 0 20px 0 0;
+  color: GhostWhite;
+}
+
+nav a {
+  line-height: 60px;
+  border: 1px solid GhostWhite;
+  padding: 7px;
+  border-radius: 4px;
+  color: DarkOrange;
+  text-decoration: none;
+}
+
+.contact-btn {
+  cursor: pointer;
+  margin: 20px 30px;
   text-align: center;
 }
 
-p {
-  border: var(--border-width) solid aqua;
-  /* 
-  stop paragraphs from getting smaller than 200px to keep them legible. 
-  containers can move freely but p tags have a minimum limit
-  */
-  min-width: 200px;
-  min-height: 200px; /* stops text from spreading to thin */
+.contact-btn a:active {
+  position: relative;
+  bottom: 2px;
+}
+
+/* once browser width reaches 480px keep width of .page-title at 270px */
+@media only screen and (max-width: 480px) {
+  .page-title {
+    border: 2px solid blueviolet;
+    width: 270px;
+  }
 }

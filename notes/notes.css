@@ -34,3 +34,24 @@ body {
   background-position: center;  /* center image */
   background-size: cover;       /* image covers entire background of element */
 }
+
+/* 
+MEDIA QUERIES - Media Queries
+_______________________________
+*/
+
+/* 
+@media — This keyword begins a media query rule and instructs the CSS compiler on how to parse the rest of the rule.
+
+only screen — Indicates what types of devices should use this rule. Screen is the media type always used for displaying content, no matter the type of device. The only keyword is added to indicate that this rule only applies to one media type (screen).
+
+(max-width : 480px) — This part of the rule is called a media feature, and instructs the CSS compiler to apply the CSS styles to devices with a width of 480 pixels or smaller. Media features are the conditions that must be met in order to render the CSS within a media query.
+
+inside the brackets is the rule that should be applied
+*/
+
+@media only screen and (max-width: 480px) {
+  body {
+    font-size: 12px;
+  }
+}
