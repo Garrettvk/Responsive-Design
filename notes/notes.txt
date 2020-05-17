@@ -60,12 +60,14 @@ ______________________________
   Example: when you stretch out a webpage the texts can become really short. Add and limit to the height can fix this problem. Instead of stretching completely flat it the height stops getting shorter now matter how far you stretch the browser.
 
 
+MEDIA QUERIES
+Responsive Web Design
+_________________________
 
+  example of responsive and non responsive websites
 
-
-
-
-
+    https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/globe-book-store/index-responsive.html
+    https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/globe-book-store/index.html
 
 
 
