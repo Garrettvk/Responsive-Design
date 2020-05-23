@@ -144,3 +144,11 @@ footer .container {
     padding-top: 0px;
   }
 }
+
+/* for screens under 700 pixels. */
+@media only screen and (max-width: 700px) {
+    .supporting img {
+        /* don't display coffee image */
+        display: none;
+    }
+}
