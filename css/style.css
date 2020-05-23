@@ -146,3 +146,17 @@ This wings turn blue when the change has worked
         background-image: url("../img/spaceship@2x.png"); 
     }
 }
+
+/* 
+The website’s text needs to be larger for users who have small, low resolution screens.
+
+Write a media query that applies when the max-resolution is 150dpi and the screen has a max-width of 480px.
+*/
+
+@media only screen and (max-resolution: 150dpi) and (max-width: 480px) {
+    /* CSS ruleset */
+    /* Inside the media query, make the font-size of the .page-description element 20px. */
+    .page-description {
+        font-size: 20px;
+    }
+}
