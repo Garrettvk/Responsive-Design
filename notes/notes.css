@@ -29,10 +29,10 @@ ______________________________
 */
 
 body {
-  background-image: url('#');   /* url for background image '#' is a placeholder */
+  background-image: url("#"); /* url for background image '#' is a placeholder */
   background-repeat: no-repeat; /* don't repeat background, this is on by default */
-  background-position: center;  /* center image */
-  background-size: cover;       /* image covers entire background of element */
+  background-position: center; /* center image */
+  background-size: cover; /* image covers entire background of element */
 }
 
 /* 
@@ -54,4 +54,14 @@ inside the brackets is the rule that should be applied
   body {
     font-size: 12px;
   }
+}
+
+/* 
+MEDIA QUERIES - Range
+_______________________________
+*/
+
+/* By using multiple widths and heights, a range can be set for a media query. */
+/* ruleset for 320px - 480px */
+@media only screen and (min-width: 320px) and (max-width: 480px) {
 }
