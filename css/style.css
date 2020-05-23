@@ -152,3 +152,11 @@ footer .container {
         display: none;
     }
 }
+
+/* targets a screen width less than 470 pixels. */
+@media only screen and (max-width: 470px) {
+    /* rating text becomes 32px */
+    .rating h1 {
+        font-size: 2rem;
+    }
+}
