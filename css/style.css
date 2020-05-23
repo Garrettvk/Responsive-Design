@@ -123,9 +123,9 @@ nav a {
   }
 }
 
-/* By using multiple widths and heights, a range can be set for a media query. */
-/* ruleset for 320px - 480px */
-@media only screen and (min-width: 320px) and (max-width: 480px) {
+/* for screens between 320px - 480px or if orientation is portrait */
+@media only screen and (min-width: 320px) and (max-width: 480px),
+(orientation: portrait) {
   /* Make gallery images 95% width on screen sizes within given range */
   .gallery-item .thumbnail {
     width: 95%;
