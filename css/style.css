@@ -55,8 +55,12 @@ li {
   padding: 0 1rem;
 }
 
+/* coffee bean image */
 .supporting img {
-
+  border: 2px solid red;
+  /* set size to 10% */
+  width: 10%;
+  height: 10%;
 }
 
 .rating {
