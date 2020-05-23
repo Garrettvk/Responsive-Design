@@ -63,6 +63,14 @@ li {
   height: 10%;
 }
 
+/* text next to coffee bean image */
+.supporting .description {
+  border: 2px solid orange;
+
+  /* Set the right margin of the image to 5 percent. */
+  margin-right: 5%;
+}
+
 .rating {
   background-color: OrangeRed;
   height: 20rem;
