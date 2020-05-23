@@ -1,174 +1,102 @@
 html,
 body {
-  max-width: 1200px;
-  margin: auto;
-  font-family: 'Space Mono', sans-serif;
-  font-size: 18px;
-  line-height: 1.4em;
-  color: GhostWhite;
+  font-family: Helvetica, sans-serif;
+  font-size: 16px;
+  margin: 0;
+  background-color: white;
 }
 
-body {
-  background-image: url('../img/space.jpg');
-  height: 100%;
-  background-attachment: fixed;
-  background-size: cover;
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.main {
+  height: 30rem;
+  padding-top: 1rem;
+}
+
+.main img {
+  width: 15rem;
+  display: block;
+  margin: auto;
+  margin-top: 5rem;
+}
+
+nav {
+  background-color: OrangeRed;
+  color: White;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+}
+
+li {
+  display: inline-block;
+}
+
+.supporting,
+.rating,
+.gallery,
+.location {
+  margin: 4em auto;
+}
+
+.supporting {
+  display: flex;
+  align-items: flex-start;
+  padding: 0 1rem;
+}
+
+.supporting img {
+
+}
+
+.rating {
+  background-color: OrangeRed;
+  height: 20rem;
+  padding: 0 1rem;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rating h1 {
+
+}
+
+.gallery img {
+  display: block;
+  width: 30%;
+  margin: 1.5%;
+  float: left;
 }
 
 .clearfix {
   clear: both;
 }
 
-/* Title and Description */
-
-.page-title {
-  border: 2px solid red;
+.location {
   text-align: center;
-  margin: auto;
-  line-height: 2em;
+  margin-bottom: 7rem;
 }
 
-.logo {
-  height: 80px;
-  width: 80px;
-  background-image: url('../img/spaceship.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-  display: inline-block;
-  position: relative;
-  top: 1em;
+.location img {
+
 }
 
-.page-title h1 {
-  display: inline-block;
+footer {
+  background-color: OrangeRed;
+  padding: 0 1rem;
 }
 
-.main {
-  text-align: center;
-}
-
-.page-description {
-  font-size: 0.8rem;
-  padding: 30px;
-}
-
-.learn-more {
-  color: DarkOrange;
-  text-decoration: none;
-  display: block;
-  margin: 25px 0 0 0;
-  font-weight: bold;
-}
-
-/* Gallery */
-
-.gallery {
+footer .container {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 20px;
-}
-
-.gallery-item {
-  margin: 20px;
-}
-
-.gallery-item .thumbnail {
-  width: 240px;
-  border: 2px solid GhostWhite;
-  border-radius: 4px;
-}
-
-/* Footer Navigation */
-
-nav {
-  margin-top: 30px;
-}
-
-nav ul {
-  display: block;
-}
-
-nav li {
-  display: inline;
-  margin: 0 20px 0 0;
-  color: GhostWhite;
-}
-
-nav a {
-  line-height: 60px;
-  border: 1px solid GhostWhite;
-  padding: 7px;
-  border-radius: 4px;
-  color: DarkOrange;
-  text-decoration: none;
-}
-
-.contact-btn {
-  cursor: pointer;
-  margin: 20px 30px;
-  text-align: center;
-}
-
-.contact-btn a:active {
-  position: relative;
-  bottom: 2px;
-}
-
-/* once browser width reaches 480px keep width of .page-title at 270px */
-@media only screen and (max-width: 480px) {
-  .page-title {
-    border: 2px solid blueviolet;
-    width: 270px;
-  }
-}
-
-/* for screens between 320px - 480px or if orientation is portrait */
-@media only screen and (min-width: 320px) and (max-width: 480px),
-  (orientation: portrait) {
-  /* Make gallery images 95% width on screen sizes within given range */
-  .gallery-item .thumbnail {
-    width: 95%;
-    border: 20px solid pink;
-  }
-}
-
-/* Write a media query to make the logo higher quality if the visitor is looking at the Amazing Space website on a high resolution display.
-
-A high resolution display may have a min-resolution of 150dpi. 
-
-If you don't see a change try zooming in and out
-
-This wings turn blue when the change has worked
-*/
-@media only screen and (min-resolution: 150dpi) {
-  .logo {
-    background-image: url('../img/spaceship@2x.png');
-  }
-}
-
-/* 
-When max-resolution is 150dpi and the screen has a max-width of 480px.
-*/
-
-@media only screen and (max-resolution: 150dpi) and (max-width: 480px) {
-  .page-description {
-    font-size: 20px; /* make font bigger */
-    border: 20px solid yellow;
-  }
-}
-
-/* when the screen width is within a certain range and landscape */
-@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  .page-title,
-  .page-description {
-    border: 20px solid orange;
-    float: left; /* keep items to the left of screen */
-    width: 20em;
-  }
-
-  .page-description {
-    border: 20px solid orangered;
-    text-align: left; /* align text to the left of screen */
-  }
+  align-items: center;
+  justify-content: space-between;
+  padding: 5em 0;
+  color: white;
 }
