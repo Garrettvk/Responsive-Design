@@ -1,3 +1,8 @@
+/* variable for border width */
+:root {
+  --border-size: 2px;
+}
+
 html,
 body {
   font-family: Helvetica, sans-serif;
@@ -57,7 +62,7 @@ li {
 
 /* coffee bean image */
 .supporting img {
-  border: 2px solid red;
+  border: var(--border-size) solid red;
   /* set size to 10% */
   width: 10%;
   height: 10%;
@@ -65,7 +70,7 @@ li {
 
 /* text next to coffee bean image */
 .supporting .description {
-  border: 2px solid orange;
+  border: var(--border-size) solid orange;
 
   /* Set the right margin of the image to 5 percent. */
   margin-right: 5%;
@@ -119,8 +124,15 @@ footer .container {
 
 /* navigation items at the top of the page */
 .main nav ul li {
-  border: 2px solid purple;
+  border: var(--border-size) solid purple;
   /* T R B L */
   /* add space around items */
   padding: 0.75rem 1.25rem;
+}
+
+/* text for rating */
+.rating .container h1 {
+  border: var(--border-size) solid blue;
+  /* 40px */
+  font-size: 2.5rem;
 }
