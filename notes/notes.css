@@ -65,3 +65,14 @@ _______________________________
 /* ruleset for 320px - 480px */
 @media only screen and (min-width: 320px) and (max-width: 480px) {
 }
+
+
+/* 
+MEDIA QUERIES - Dots Per Inch (DPI)
+_______________________________
+*/
+
+/* These media features accept a resolution value in either dots per inch (dpi) or dots per centimeter (dpc). */
+@media only screen and (min-resolution: 300dpi) {
+    /* CSS for high resolution screens */
+}
