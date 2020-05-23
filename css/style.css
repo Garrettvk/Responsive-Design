@@ -14,6 +14,13 @@ body {
 .main {
   height: 30rem;
   padding-top: 1rem;
+
+  /* add coffee shop photo at top of page */
+  background-image: url('https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/tsunami-coffee/images/bg-photo.png'); /* url for background image '#' is a placeholder */
+  background-repeat: no-repeat; /* don't repeat background */
+  background-position: center;  /* center image */
+  background-size: cover;       /* image covers entire background of element */
+
 }
 
 .main img {
