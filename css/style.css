@@ -2,14 +2,14 @@ html,
 body {
   max-width: 1200px;
   margin: auto;
-  font-family: "Space Mono", sans-serif;
+  font-family: 'Space Mono', sans-serif;
   font-size: 18px;
   line-height: 1.4em;
   color: GhostWhite;
 }
 
 body {
-  background-image: url("../img/space.jpg");
+  background-image: url('../img/space.jpg');
   height: 100%;
   background-attachment: fixed;
   background-size: cover;
@@ -31,7 +31,7 @@ body {
 .logo {
   height: 80px;
   width: 80px;
-  background-image: url("../img/spaceship.png");
+  background-image: url('../img/spaceship.png');
   background-size: contain;
   background-repeat: no-repeat;
   display: inline-block;
@@ -126,11 +126,11 @@ nav a {
 /* By using multiple widths and heights, a range can be set for a media query. */
 /* ruleset for 320px - 480px */
 @media only screen and (min-width: 320px) and (max-width: 480px) {
-    /* Make gallery images 95% width on screen sizes within given range */
-    .gallery-item .thumbnail {
-        width: 95%;
-        border: 20px solid pink;
-    }
+  /* Make gallery images 95% width on screen sizes within given range */
+  .gallery-item .thumbnail {
+    width: 95%;
+    border: 20px solid pink;
+  }
 }
 
 /* Write a media query to make the logo higher quality if the visitor is looking at the Amazing Space website on a high resolution display.
@@ -142,21 +142,18 @@ If you don't see a change try zooming in and out
 This wings turn blue when the change has worked
 */
 @media only screen and (min-resolution: 150dpi) {
-    .logo {
-        background-image: url("../img/spaceship@2x.png"); 
-    }
+  .logo {
+    background-image: url('../img/spaceship@2x.png');
+  }
 }
 
 /* 
-The website’s text needs to be larger for users who have small, low resolution screens.
-
-Write a media query that applies when the max-resolution is 150dpi and the screen has a max-width of 480px.
+When max-resolution is 150dpi and the screen has a max-width of 480px.
 */
 
 @media only screen and (max-resolution: 150dpi) and (max-width: 480px) {
-    /* CSS ruleset */
-    /* Inside the media query, make the font-size of the .page-description element 20px. */
-    .page-description {
-        font-size: 20px;
-    }
+  .page-description {
+    font-size: 20px; /* make font bigger */            
+    border: 20px solid yellow;
+  }
 }
