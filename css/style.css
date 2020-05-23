@@ -90,7 +90,6 @@ li {
 }
 
 .location img {
-
 }
 
 footer {
@@ -108,8 +107,8 @@ footer .container {
 
 /* navigation items at the top of the page */
 .main nav ul li {
-    border: 2px solid purple;
-    /* T R B L */
-    /* add space around items */
-    padding: 0.75rem 1.25rem;
+  border: 2px solid purple;
+  /* T R B L */
+  /* add space around items */
+  padding: 0.75rem 1.25rem;
 }
