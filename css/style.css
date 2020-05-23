@@ -125,7 +125,7 @@ nav a {
 
 /* for screens between 320px - 480px or if orientation is portrait */
 @media only screen and (min-width: 320px) and (max-width: 480px),
-(orientation: portrait) {
+  (orientation: portrait) {
   /* Make gallery images 95% width on screen sizes within given range */
   .gallery-item .thumbnail {
     width: 95%;
@@ -153,7 +153,22 @@ When max-resolution is 150dpi and the screen has a max-width of 480px.
 
 @media only screen and (max-resolution: 150dpi) and (max-width: 480px) {
   .page-description {
-    font-size: 20px; /* make font bigger */            
+    font-size: 20px; /* make font bigger */
     border: 20px solid yellow;
+  }
+}
+
+/* when the screen width is within a certain range and landscape */
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .page-title,
+  .page-description {
+    border: 20px solid orange;
+    float: left; /* keep items to the left of screen */
+    width: 20em;
+  }
+
+  .page-description {
+    border: 20px solid orangered;
+    text-align: left; /* align text to the left of screen */
   }
 }
