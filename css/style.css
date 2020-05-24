@@ -1,6 +1,6 @@
 /* variable for border width */
 :root {
-  /* --border-size: 2px; */
+  --border-size: 2px;
 }
 
 html,
@@ -22,8 +22,8 @@ body {
 
   /* add coffee shop photo at top of page */
   background-image: url('https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/tsunami-coffee/images/bg-photo.png'); /* url for background image '#' is a placeholder */
-  background-position: center;  /* center image */
-  background-size: cover;       /* image covers entire background of element */
+  background-position: center; /* center image */
+  background-size: cover; /* image covers entire background of element */
 }
 
 .main img {
@@ -88,9 +88,9 @@ li {
 
 /* text for rating */
 .rating h1 {
-    border: var(--border-size) solid blue;
-    /* 40px */
-    font-size: 2.5rem;
+  border: var(--border-size) solid blue;
+  /* 40px */
+  font-size: 2.5rem;
 }
 
 /* gallery images */
@@ -148,10 +148,10 @@ footer .container {
 
 /* for screens under 700 pixels. */
 @media only screen and (max-width: 700px) {
-    .supporting img {
-        /* don't display coffee image */
-        display: none;
-    }
+  .supporting img {
+    /* don't display coffee image */
+    display: none;
+  }
 }
 
 /* targets a screen width less than 470 pixels. */
@@ -170,5 +170,13 @@ footer .container {
   /* nav bar inside footer */
   footer nav {
     display: none; /* don't show it */
+  }
+
+  /* copyright text */
+  .copyright {
+    /* element takes up entire container width */
+    width: 100%;
+    /* center text */
+    text-align: center;
   }
 }
