@@ -93,6 +93,7 @@ li {
     font-size: 2.5rem;
 }
 
+/* gallery images */
 .gallery img {
   display: block;
   width: 30%;
@@ -155,8 +156,14 @@ footer .container {
 
 /* targets a screen width less than 470 pixels. */
 @media only screen and (max-width: 470px) {
-    /* rating text becomes 32px */
-    .rating h1 {
-        font-size: 2rem;
-    }
+  /* rating text becomes 32px */
+  .rating h1 {
+    font-size: 2rem;
+  }
+
+  /* gallery images */
+  .gallery img {
+    width: 100%;
+    margin: 0;
+  }
 }
