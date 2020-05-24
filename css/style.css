@@ -1,6 +1,6 @@
 /* variable for border width */
 :root {
-  --border-size: 2px;
+  /* --border-size: 2px; */
 }
 
 html,
@@ -156,16 +156,19 @@ footer .container {
 
 /* targets a screen width less than 470 pixels. */
 @media only screen and (max-width: 470px) {
-  /* rating text becomes 32px */
+  /* rating text */
   .rating h1 {
-    font-size: 2rem;
+    font-size: 2rem; /* 32px */
   }
 
   /* gallery images */
   .gallery img {
-    /* take up full size of screen */
-    width: 100%;
-    /* no space around images */
-    margin: 0;
+    width: 100%; /* take up full size of screen */
+    margin: 0; /* no space around images */
+  }
+
+  /* nav bar inside footer */
+  footer nav {
+    display: none; /* don't show it */
   }
 }
